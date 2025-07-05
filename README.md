@@ -1,15 +1,25 @@
-# quote-api
+# 📚 Quote API
 
-To install dependencies:
+A simple self-hosted REST API to serve quotes, built with [Bun](https://bun.sh/), Express, SQLite, and Docker. Supports search, filtering, random selection, and API key authentication.
 
+---
+
+## 🚀 Getting Started
+
+| Method | Endpoint                | Description                      
+| ------ | ----------------------- | --------------------------------
+| GET    | `/quotes`               | Get paginated list of quotes     
+| GET    | `/quotes/:id`           | Get a quote by its ID            
+| GET    | `/quotes/random`        | Get a random quote               
+| GET    | `/quotes/search`        | Search quotes by text (`?q=...`) 
+| GET    | `/quotes/category/:tag` | Filter quotes by category/tag    
+| GET    | `/quotes/author/:name`  | Filter quotes by author          
+| GET    | `/quotes/length`        | Filter quotes by quote length    
+| GET    | `/quotes/stats`         | Get total stats                  
+
+### Clone & Run Locally
 ```bash
+git clone https://github.com/your-username/quote-api.git
+cd quote-api
 bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.2.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+bun run src/index.ts
