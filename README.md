@@ -1,6 +1,6 @@
 # 📚 Quote API
 
-A simple self-hosted REST API to serve quotes, built with [Bun](https://bun.sh/), Express, SQLite, and Docker. Supports search, filtering, random selection, and API key authentication.
+A simple self-hosted REST API to serve quotes, built with [Bun](https://bun.sh/), Express and SQLite. Supports search, filtering, random selection, and API key authentication.
 
 ---
 
@@ -16,10 +16,3 @@ A simple self-hosted REST API to serve quotes, built with [Bun](https://bun.sh/)
 | GET    | `/quotes/author/:name`  | Filter quotes by author          
 | GET    | `/quotes/length`        | Filter quotes by quote length    
 | GET    | `/quotes/stats`         | Get total stats                  
-
-### Clone & Run Locally
-```bash
-git clone https://github.com/your-username/quote-api.git
-cd quote-api
-bun install
-bun run src/index.ts
