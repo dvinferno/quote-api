@@ -1,0 +1,6 @@
+# .dockerignore
+node_modules
+apps/*/node_modules
+**/.bun-install-cache
+**/dist
+**/.git

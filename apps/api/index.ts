@@ -18,5 +18,5 @@ app.get("/", (_, res) => {
     res.send("Welcome to the Quote API!");
 });
 
-const PORT = Bun.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server on http://localhost:${PORT}`));
